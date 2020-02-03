@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="calculette.css">
+	<title>Calculatrice</title>
+	<script type="text/javascript" src="calculette.js"></script>
+</head>
+<body>
+  <div class="tout">
+	<table border="0" class="tab1">
+		<tr>
+			<td>
+				<input type="text" id="ecran" readonly>
+			</td>
+		</tr>
+	</table>
+	<div class="tab2">
+		<div class="groupe1">
+		   <td><button class="bt" value="on" onclick="reset('ac')">AC</button></td>
+		   <td><button class="bt" value="" >+/-</button></td>
+		   <td><button class="bt" onclick="calculer('%')">%</button></td>
+		   <td><button class="bts" onclick="calculer('op','/')">/</button></td>
+		</div>
+
+		<div class="groupe2">
+		   <td><button class="btn" onclick="calculer('ch', 7)">7</button></td>
+		   <td><button class="btn" onclick="calculer('ch', 8)">8</button></td>
+		   <td><button class="btn" onclick="calculer('ch', 9)">9</button></td>
+		   <td><button class="bts" onclick="calculer('op','x')">x</button></td>
+		</div>
+
+		<div class="groupe3">
+		   <td><button class="btn" onclick="calculer('ch', 4)">4</button></td>
+		   <td><button class="btn" onclick="calculer('ch', 5)">5</button></td>
+		   <td><button class="btn" onclick="calculer('ch', 6)">6</button></td>
+		   <td><button class="bts" onclick="calculer('op','-')">-</button></td>
+		</div>
+
+		<div class="groupe4">
+		   <td><button class="btn" onclick="calculer('ch', 1)">1</button></td>
+		   <td><button class="btn" onclick="calculer('ch', 2)">2</button></td>
+		   <td><button class="btn" onclick="calculer('ch', 3)">3</button></td>
+		   <td><button class="bts" onclick="calculer('op','+')">+</button></td>
+		</div>
+
+		<div class="groupe5">
+		   <td><button class="btn1" onclick="calculer('ch', 0)">0</button></td>
+		   <td><button class="btn" onclick="calculer('dec')">,</button></td>
+		   <td><button class="bts" onclick="calculer('eg')">=</button></td>
+		</div> 
+	</div>
+  </div>
+</body>
+</html>
